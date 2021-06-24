@@ -1,14 +1,45 @@
 
 
 
-section {
+.grid {
 
     text-align: center ;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns:  35%;
+    grid-template-rows:   30px ;
+    grid-template-areas:    "header header header"
+                            " sidebar main right"
+                            "sidebar footer footer";
+    
 
   }
+  
+
+.titre1{
+    grid-area: header;
+    margin-top: auto;
+
+
+}
+
+
+.bar2{
+
+    grid-area: header;
+    margin-top: 520px;
+
+}
+
+
+.texte3{
+
+    grid-area: sidebar;
+    margin-top: 550px;
+    background-color: lightsalmon;
+
+}
+
+
 
 
   header{
@@ -52,7 +83,7 @@ section {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 16px;
     text-decoration: none;
   }
   
@@ -67,4 +98,12 @@ section {
     box-sizing: border-box;
     border: 2px solid white;
     border-radius: 4px;
+  }
+
+
+
+
+  .texte{
+    background-color: rgb(189, 133, 111) ;
+    margin-top: auto;
   }
